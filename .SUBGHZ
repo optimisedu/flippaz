@@ -1,0 +1,72 @@
+
+Example data from a `BinRAW` file:
+
+```
+...
+Protocol: BinRAW
+Bit: 1572
+TE: 597
+Bit_RAW: 260
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0F 4A B5 55 4C B3 52 AC D5 2D 53 52 AD 4A D5 35 00
+Bit_RAW: 263
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 04 D5 32 D2 AB 2B 33 32 CB 2C CC B3 52 D3 00
+Bit_RAW: 259
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 4A AB 55 34 D5 2D 4C CD 33 4A CD 55 4C D2 B3 00
+Bit_RAW: 263
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0F 7F 4A AA D5 2A CC B2 B4 CB 34 CC AA AB 4D 53 53 00
+Bit_RAW: 264
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 FC 00 00 15 2C CB 34 D3 35 35 4D 4B 32 B2 D3 33 00
+Bit_RAW: 263
+Data_RAW: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 DE 02 D3 54 D5 4C D2 CC AD 4B 2C B2 B5 54 CC AB 00
+```
+
+## File examples
+
+### Key file, standard preset
+
+    Filetype: Flipper SubGhz Key File
+    Version: 1
+    Frequency: 433920000
+    Preset: FuriHalSubGhzPresetOok650Async
+    Protocol: Princeton
+    Bit: 24
+    Key: 00 00 00 00 00 95 D5 D4
+    TE: 400
+
+### Key file, custom preset
+
+    Filetype: Flipper SubGhz Key File
+    Version: 1
+    Frequency: 433920000
+    Preset: FuriHalSubGhzPresetCustom
+    Custom_preset_module: CC1101
+    Custom_preset_data: 02 0D 03 07 08 32 0B 06 14 00 13 00 12 30 11 32 10 17 18 18 19 18 1D 91 1C 00 1B 07 20 FB 22 11 21 B6 00 00 00 C0 00 00 00 00 00 00
+    Protocol: Princeton
+    Bit: 24
+    Key: 00 00 00 00 00 95 D5 D4
+    TE: 400
+
+### RAW file, standard preset
+
+    Filetype: Flipper SubGhz RAW File
+    Version: 1
+    Frequency: 433920000
+    Preset: FuriHalSubGhzPresetOok650Async
+    Protocol: RAW
+    RAW_Data: 29262 361 -68 2635 -66 24113 -66 11 ...
+    RAW_Data: -424 205 -412 159 -412 381 -240 181 ...
+    RAW_Data: -1448 361 -17056 131 -134 233 -1462 131 -166 953 -100 ...
+
+### RAW file, custom preset
+
+    Filetype: Flipper SubGhz RAW File
+    Version: 1
+    Frequency: 433920000
+    Preset: FuriHalSubGhzPresetCustom
+    Custom_preset_module: CC1101
+    Сustom_preset_data: 02 0D 03 07 08 32 0B 06 14 00 13 00 12 30 11 32 10 17 18 18 19 18 1D 91 1C 00 1B 07 20 FB 22 11 21 B6 00 00 00 C0 00 00 00 00 00 00
+    Protocol: RAW
+    RAW_Data: 29262 361 -68 2635 -66 24113 -66 11 ...
+    RAW_Data: -424 205 -412 159 -412 381 -240 181 ...
+    RAW_Data: -1448 361 -17056 131 -134 233 -1462 131 -166 953 -100 ...
+
